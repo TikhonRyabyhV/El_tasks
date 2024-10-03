@@ -1,6 +1,6 @@
 `timescale 1 ns / 100 ps
 
-module freq_div6_testbench ();
+module freq_div_2n_testbench ();
 
 reg clk = 1'b1;
 always begin
@@ -9,7 +9,7 @@ end
 
 reg  reset;
 
-freq_div6 freq_div6 (
+freq_div_2n freq_div_2n (
 			.clk  (clk  ),
 			.reset(reset)
 );

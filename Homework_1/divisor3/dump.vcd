@@ -1,0 +1,228 @@
+$date
+	Thu Oct  3 13:44:31 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module div3_testbench $end
+$var wire 1 ! divisibility $end
+$var reg 1 " clk $end
+$var reg 8 # data [7:0] $end
+$scope module divisor3 $end
+$var wire 8 $ data [7:0] $end
+$var wire 1 ! divisibility $end
+$scope begin iter_mod_gen[1] $end
+$scope module diff_even_odd_i $end
+$var wire 3 % cur_depth [2:0] $end
+$var wire 4 & data [3:0] $end
+$var wire 4 ' even_mask [3:0] $end
+$var wire 4 ( odd_mask [3:0] $end
+$var wire 3 ) new_depth [2:0] $end
+$var wire 4 * diff [3:0] $end
+$scope begin odd_even_sum_gen[1] $end
+$upscope $end
+$scope begin odd_even_sum_gen[2] $end
+$upscope $end
+$scope begin odd_even_sum_gen[3] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin iter_mod_gen[2] $end
+$scope module diff_even_odd_i $end
+$var wire 2 + cur_depth [1:0] $end
+$var wire 2 , data [1:0] $end
+$var wire 2 - even_mask [1:0] $end
+$var wire 2 . odd_mask [1:0] $end
+$var wire 2 / new_depth [1:0] $end
+$var wire 2 0 diff [1:0] $end
+$scope begin odd_even_sum_gen[1] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module diff_even_odd_0 $end
+$var wire 4 1 cur_depth [3:0] $end
+$var wire 8 2 data [7:0] $end
+$var wire 8 3 even_mask [7:0] $end
+$var wire 8 4 odd_mask [7:0] $end
+$var wire 4 5 new_depth [3:0] $end
+$var wire 8 6 diff [7:0] $end
+$scope begin odd_even_sum_gen[1] $end
+$upscope $end
+$scope begin odd_even_sum_gen[2] $end
+$upscope $end
+$scope begin odd_even_sum_gen[3] $end
+$upscope $end
+$scope begin odd_even_sum_gen[4] $end
+$upscope $end
+$scope begin odd_even_sum_gen[5] $end
+$upscope $end
+$scope begin odd_even_sum_gen[6] $end
+$upscope $end
+$scope begin odd_even_sum_gen[7] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 6
+b100 5
+b10101010 4
+b1010101 3
+bx 2
+b1000 1
+bx 0
+b1 /
+b10 .
+b1 -
+bx ,
+b10 +
+bx *
+b10 )
+b1010 (
+b101 '
+bx &
+b100 %
+bx $
+bx #
+1"
+x!
+$end
+#10
+0!
+b0 0
+b0 ,
+b0 *
+b0 &
+b0 6
+b0 #
+b0 $
+b0 2
+0"
+#20
+1"
+#30
+0"
+#40
+1"
+#50
+1!
+b1 0
+b1 ,
+b1 *
+b1 &
+b1 6
+0"
+b1 #
+b1 $
+b1 2
+#60
+1"
+#70
+0"
+#80
+1"
+#90
+1!
+b1 0
+b1 ,
+b1 *
+b1 &
+b1 6
+0"
+b10 #
+b10 $
+b10 2
+#100
+1"
+#110
+0"
+#120
+1"
+#130
+0!
+b0 0
+b0 ,
+b0 *
+b0 &
+b0 6
+0"
+b11 #
+b11 $
+b11 2
+#140
+1"
+#150
+0"
+#160
+1"
+#170
+1!
+b1 0
+b1 ,
+b1 *
+b10 &
+b10 6
+0"
+b101 #
+b101 $
+b101 2
+#180
+1"
+#190
+0"
+#200
+1"
+#210
+0!
+b0 0
+b0 ,
+b0 *
+b0 &
+b0 6
+0"
+b1100 #
+b1100 $
+b1100 2
+#220
+1"
+#230
+0"
+#240
+1"
+#250
+0!
+b0 0
+b0 ,
+b0 *
+b0 &
+b0 6
+0"
+b1111 #
+b1111 $
+b1111 2
+#260
+1"
+#270
+0"
+#280
+1"
+#290
+1!
+b1 0
+b1 ,
+b1 *
+b10 &
+b10 6
+0"
+b10001 #
+b10001 $
+b10001 2
+#300
+1"
+#310
+0"

@@ -1,14 +1,19 @@
 `timescale 1 ns / 100 ps
 
-module log2_testbench ();
+module log2_testbench
+#(
+	parameter DATA_LEN = 8               ,
+	parameter EXPN_LEN = $clog2(DATA_LEN)
+)
+();
 
 reg clk = 1'b1;
 always begin
 	#1 clk = ~clk;
 end
 
-reg  [7:0] data_in ;
-wire [2:0] exponent;
+reg  [DATA_LEN - 1:0] data_in ;
+wire [EXPN_LEN - 1:0] exponent;
 
 log2 log2 (
 		.data_in(data_in ),
