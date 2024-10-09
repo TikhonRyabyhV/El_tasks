@@ -1,32 +1,31 @@
-module imp_gen (
+module imp_gen 
+#(
+	parameter IMP_PERIOD = 5                 ,
+	parameter COUNT_LEN  = $clog2(IMP_PERIOD)
+)
+(
 	input  wire clk    ,
 	input  wire reset  ,
 
-	output reg  impulse
+	output wire impulse
 );
 
-reg [2:0] counter;
+reg [COUNT_LEN - 1:0] counter;
 
 always @(posedge clk) begin
-	if(reset | (counter == 3'b101)) begin
-		counter <= 1'b0;
-	end
+	if(reset)
+		counter <= 0;
 
 	else begin
-		counter <= counter + 1'b1;
+
+		if(counter == IMP_PERIOD)
+			counter <= 0;
+
+		else
+			counter <= counter + 1'b1;
 	end
 end
 
-always @(posedge clk) begin
-	if(reset) begin
-		impulse <= 1'b1;
-	end
-
-	else begin
-		if((counter == 3'b000) | (counter == 3'b101)) begin
-			impulse <= ~ impulse;
-		end
-	end
-end
+assign impulse = (counter == IMP_PERIOD) ? 1'b1 : 1'b0;
 
 endmodule

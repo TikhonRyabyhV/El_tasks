@@ -3,7 +3,6 @@
 module div3_testbench
 #(
         parameter DATA_LEN  = 4'd8,
-        parameter DEPTH_LEN = 3'd4,
         parameter STEPS     = 3'd3
 )
 ();
@@ -46,7 +45,7 @@ initial begin
 	#2; data = 8'd15  ; #2;
 	$display("%d / 3 ? -  %d \n", data, divisibility);
 
-	#2; data = 8'd17 ; #2;
+	#2; data = 8'd255; #2;
 	$display("%d / 3 ? -  %d \n", data, divisibility);
 
 
