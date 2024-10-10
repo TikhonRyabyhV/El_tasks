@@ -20,7 +20,7 @@ initial begin
 	$dumpfile("dump.vcd"); $dumpvars();
 
 	reset = 1'b1; #1 ; 
-	reset = 1'b0; #18;
+	reset = 1'b0; #35;
 
 	$finish;
 

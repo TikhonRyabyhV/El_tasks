@@ -18,7 +18,7 @@ always @(posedge clk) begin
 
 	else begin
 
-		if(counter == IMP_PERIOD)
+		if(counter == IMP_PERIOD - 1)
 			counter <= 0;
 
 		else
@@ -26,6 +26,6 @@ always @(posedge clk) begin
 	end
 end
 
-assign impulse = (counter == IMP_PERIOD) ? 1'b1 : 1'b0;
+assign impulse = (counter == IMP_PERIOD - 1) ? 1'b1 : 1'b0;
 
 endmodule
